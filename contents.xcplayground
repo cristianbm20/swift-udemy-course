@@ -3,5 +3,6 @@
     <pages>
         <page name='section-3-the-bases'/>
         <page name='section-4-characters-and-strings'/>
+        <page name='section-5-more-data-types-and-structures'/>
     </pages>
 </playground>
