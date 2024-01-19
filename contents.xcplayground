@@ -7,5 +7,6 @@
         <page name='section-6-functions-and-closures-intro'/>
         <page name='section-7-oop-introduction'/>
         <page name='section-8-optionals'/>
+        <page name='section-9-collections-sets'/>
     </pages>
 </playground>
