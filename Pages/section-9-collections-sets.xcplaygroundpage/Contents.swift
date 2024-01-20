@@ -58,9 +58,9 @@ print(myIntSet2.subtracting(myIntSet1))
 
 // COLLECTIONS ALGORITHMS
 
-var myArray = [5, 8, 1, 0, 3, 9, 7, 2, 4, 6]
+var myArray1 = [5, 8, 1, 0, 3, 9, 7, 2, 4, 6]
 
-let myDict = [5:"cinco",
+var myDict = [5:"cinco",
               8:"ocho",
               1:"uno",
               0:"cero",
@@ -71,17 +71,111 @@ let myDict = [5:"cinco",
               4:"cuatro",
               6:"seis",]
 
-let mySet: Set = [5, 8, 1, 0, 3, 9, 7, 2, 4, 6]
+var mySet: Set = [5, 8, 1, 0, 3, 9, 7, 2, 4, 6]
 
-// Sort
-print(myArray)
-myArray.sort()
-print(myArray)
+// Sort(). Modify the original array
+print(myArray1)
+myArray1.sort()
+print(myArray1)
 
-myArray.sort {(intA, intB) -> Bool in
+// Custom sort()
+myArray1.sort {(intA, intB) -> Bool in
   return intA > intB
 }
-print(myArray)
+print(myArray1)
 
 // myDict.sort() unsupported
 // mySet.sort()  unsupported
+
+// Sorted(). Does not modify the original array.
+// Returns a new sorted array
+var myArray2 = [5, 8, 1, 0, 3, 9, 7, 2, 4, 6]
+var myArray2Sorted = myArray2.sorted()
+print(myArray2)
+print(myArray2Sorted)
+
+// Custom sorted()
+myArray2Sorted = myArray2.sorted { (intA, intB) -> Bool in
+  return intA > intB
+}
+print(myArray2Sorted)
+
+let mySortedDict = myDict.sorted { (elemA, elemB) -> Bool in
+  return elemA.key < elemB.key
+}
+print(mySortedDict)
+
+var mySortedSet = mySet.sorted()
+print(mySortedSet)
+
+mySortedSet = mySet.sorted { (intA, intB) -> Bool in
+  return intA > intB
+}
+print(mySortedSet)
+
+// Map
+var myArray3 = [5, 8, 1, 0, 3, 9, 7, 2, 4, 6]
+
+var myMapArray = myArray3.map { (myInt) -> Int in
+  return myInt + 10
+}
+print(myMapArray)
+
+let myStrMapArray = myArray3.map { (myInt) -> String in
+  return "This is the number \(myInt)"
+}
+print(myStrMapArray)
+
+let myIntMapArray = myDict.map { (myElem) -> Int in
+  return myElem.key
+}
+print(myIntMapArray)
+
+// ForEach
+var myArray4 = [5, 8, 1, 0, 3, 9, 7, 2, 4, 6]
+
+myArray4.forEach { (myInt) in
+  print(myInt)
+}
+
+print("")
+
+myDict.forEach { (myElem) in
+  print(myElem.key)
+}
+
+print("")
+
+mySet.forEach { (myInt) in
+  print(myInt)
+}
+
+// Count
+print(myArray4.count) // 10
+print(myDict.count)   // 10
+print(mySet.count)    // 10
+
+// Is empty
+let myEpmtyArray = [Int]()
+print(myEpmtyArray.isEmpty) // true
+print(myArray4.isEmpty)     // false
+print(myDict.isEmpty)       // false
+print(mySet.isEmpty)        // false
+
+// Reverse
+print(myArray4.reversed() as [Int])
+print(myDict.reversed())
+print(mySet.reversed())
+
+// First or last
+print(myArray4.first!)
+print(myDict.first!)
+print(mySet.first!)
+print(myArray4.last!)
+// print(myDict.last!) // Last only exists for arrays
+// print(mySet.last!)
+
+// Drop or pop
+print(myArray4.popLast()!) // Removes and returns the last element of the collection
+print(myDict.popFirst()!)  //Removes and returns the first key-value pair of the dictionary if the dictionary is not empty
+print(mySet.popFirst()!)   // Removes and returns the first element of the set.
