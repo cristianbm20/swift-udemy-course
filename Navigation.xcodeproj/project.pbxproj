@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F5BBB882B76974900D70A61 /* ViewControllerColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5BBB872B76974900D70A61 /* ViewControllerColor.swift */; };
 		9FDFB0A92B7632A70014A621 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDFB0A82B7632A70014A621 /* AppDelegate.swift */; };
 		9FDFB0AB2B7632A70014A621 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDFB0AA2B7632A70014A621 /* SceneDelegate.swift */; };
 		9FDFB0AD2B7632A70014A621 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDFB0AC2B7632A70014A621 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F5BBB872B76974900D70A61 /* ViewControllerColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerColor.swift; sourceTree = "<group>"; };
 		9FDFB0A52B7632A70014A621 /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FDFB0A82B7632A70014A621 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FDFB0AA2B7632A70014A621 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				9FDFB0A82B7632A70014A621 /* AppDelegate.swift */,
 				9FDFB0AA2B7632A70014A621 /* SceneDelegate.swift */,
 				9FDFB0AC2B7632A70014A621 /* ViewController.swift */,
+				9F5BBB872B76974900D70A61 /* ViewControllerColor.swift */,
 				9FDFB0AE2B7632A70014A621 /* Main.storyboard */,
 				9FDFB0B12B7632A80014A621 /* Assets.xcassets */,
 				9FDFB0B32B7632A80014A621 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F5BBB882B76974900D70A61 /* ViewControllerColor.swift in Sources */,
 				9FDFB0AD2B7632A70014A621 /* ViewController.swift in Sources */,
 				9FDFB0A92B7632A70014A621 /* AppDelegate.swift in Sources */,
 				9FDFB0AB2B7632A70014A621 /* SceneDelegate.swift in Sources */,
