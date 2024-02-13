@@ -8,9 +8,9 @@
 import Foundation
 
 class Automobile {
-  var color = ""
+  var color = "Pink"
   var wheels = 4
-  var price = 0
+  var price = 5000
   var isOn = false
   
   func turnOn() {

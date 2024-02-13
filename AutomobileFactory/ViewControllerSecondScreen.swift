@@ -22,9 +22,11 @@ class ViewControllerSecondScreen: UIViewController {
       switch typeToSet {
       case "combustion":
         newAutomobile = Automobile()
+        automobileImage.image = UIImage(named: "simple")
         informationLabel.text = "A new simple automobile has been created"
       case "electric":
         newAutomobile = ElectricAutomobile()
+        automobileImage.image = UIImage(named: "electric")
         informationLabel.text = "A new electric automobile has been created"
       default:
         print("Error")
