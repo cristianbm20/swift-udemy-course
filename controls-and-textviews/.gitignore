@@ -1,0 +1,5 @@
+DerivedData/
+ControlsAndTextViews.xcodeproj/xcuserdata/
+ControlsAndTextViews.xcodeproj/*.xcworkspace
+**/.DS_Store
+
